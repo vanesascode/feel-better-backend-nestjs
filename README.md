@@ -71,3 +71,47 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](LICENSE).
+
+## Swagger
+
+`npm install --save @nestjs/swagger`
+
+Add this in main.ts:
+
+```bash
+  const config = new DocumentBuilder()
+    .setTitle('My API documentation')
+    .setDescription('My API description')
+    .setVersion('1.0')
+    .addTag('auth')
+    .addTag('items')
+    .build();
+  const document = SwaggerModule.createDocument(app, config);
+  SwaggerModule.setup('api', app, document);
+```
+
+Add the @Apitags() decorators to the controllers
+
+Go to: http://localhost:3000/api
+
+## Mongoose
+
+`npm i @nestjs/mongoose mongoose`
+
+Create the schema.
+
+Import the MoongoseModule in the module file.
+
+Add the InjectModel in the service file.
+
+## Pipes
+
+`npm i --save class-validator class-transformer`
+
+Add validations in the dto files
+
+Add this to the main.ts file:
+
+```bash
+app.useGlobalPipes(new ValidationPipe());
+```
