@@ -115,3 +115,16 @@ Add this to the main.ts file:
 ```bash
 app.useGlobalPipes(new ValidationPipe());
 ```
+
+## ENV
+
+`npm i --save @nestjs/config`
+
+In app.module.ts add:
+
+```bash
+ ConfigModule.forRoot({
+      isGlobal: true,
+      envFilePath: '.env',
+    }),
+```
