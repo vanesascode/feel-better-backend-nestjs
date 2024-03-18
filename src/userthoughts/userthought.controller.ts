@@ -6,14 +6,17 @@ import {
   Patch,
   Param,
   Delete,
+  UseGuards,
 } from '@nestjs/common';
 import { UserThoughtService } from './userthought.service';
 import { CreateUserThoughtDto } from './dto/create-userthought.dto';
 import { UpdateUserThoughtDto } from './dto/update-userthought.dto';
 import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
+import { JwtAuthGuard } from 'src/auth/guards/jwt-auth-guard';
 
 @ApiBearerAuth()
 @ApiTags('Userthoughts')
+@UseGuards(JwtAuthGuard)
 @Controller('userthoughts')
 export class UserThoughtController {
   constructor(private readonly userThoughtService: UserThoughtService) {}

@@ -128,3 +128,8 @@ In app.module.ts add:
       envFilePath: '.env',
     }),
 ```
+
+## Auth packages
+
+`npm i @nestjs/jwt @nestjs/passport passport passport-jwt bcrypt`
+`npm i -D @types/passport-jwt @types/bcrypt`
