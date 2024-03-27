@@ -84,7 +84,6 @@ Add this in main.ts:
     .setDescription('My API description')
     .setVersion('1.0')
     .addTag('auth')
-    .addTag('items')
     .build();
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('api', app, document);
