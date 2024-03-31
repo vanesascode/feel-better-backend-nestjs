@@ -28,9 +28,10 @@ export class UsersService {
   }
 
   async update(id: string, updateUserDto: UpdateUserDto) {
-    const { password } = updateUserDto;
-    const plainToHash = await hash(password, 10);
-    const updatedUserDto = { ...updateUserDto, password: plainToHash };
+    const { password, ...restUpdateUserDto } = updateUserDto;
+    const updatedUserDto = password
+      ? { ...restUpdateUserDto, password: await hash(password, 10) }
+      : restUpdateUserDto;
     const user = await this.usersModel.findByIdAndUpdate(id, updatedUserDto);
     return user;
   }
