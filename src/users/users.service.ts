@@ -36,6 +36,15 @@ export class UsersService {
     return user;
   }
 
+  async resetPassword(email: string, password: string) {
+    const encryptedPassword = await hash(password, 10);
+    const user = await this.usersModel.findOneAndUpdate(
+      { email: email },
+      { password: encryptedPassword },
+    );
+    return user;
+  }
+
   async remove(id: string) {
     const user = await this.usersModel.findByIdAndDelete(id);
     return user;
