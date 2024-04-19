@@ -5,11 +5,17 @@ import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { User, UserDocument } from './schema/user.schema';
 import { hash } from 'bcrypt';
+import {
+  UserThought,
+  UserThoughtDocument,
+} from 'src/userthoughts/schema/userthought.schema';
 
 @Injectable()
 export class UsersService {
   constructor(
     @InjectModel(User.name) private usersModel: Model<UserDocument>,
+    @InjectModel(UserThought.name)
+    private userthoughtModel: Model<UserThoughtDocument>,
   ) {}
 
   async create(createUserDto: CreateUserDto) {
@@ -47,6 +53,7 @@ export class UsersService {
 
   async remove(id: string) {
     const user = await this.usersModel.findByIdAndDelete(id);
-    return user;
+    const thoughts = await this.userthoughtModel.deleteMany({ user: id });
+    return user && thoughts;
   }
 }
