@@ -29,6 +29,17 @@ export class AuthService {
     return data;
   }
 
+  async googleRegister(userObject: RegisterAuthDto) {
+    const newUser = await this.userModel.create(userObject);
+
+    const payload = { id: newUser._id, name: newUser.name };
+    const token = this.jwtAuthService.sign(payload, { expiresIn: '7d' });
+
+    const data = { user: newUser, token };
+
+    return data;
+  }
+
   async login(userObject: LoginAuthDto) {
     const { email, password } = userObject;
     const findUser = await this.userModel.findOne({
@@ -40,6 +51,22 @@ export class AuthService {
 
     if (!checkPassword)
       throw new HttpException('PASSWORD_INVALID', HttpStatus.UNAUTHORIZED);
+
+    const payload = { id: findUser._id, name: findUser.name };
+    const token = this.jwtAuthService.sign(payload, { expiresIn: '7d' });
+
+    const data = { user: findUser, token };
+
+    return data;
+  }
+
+  async googleLogin(userObject: LoginAuthDto) {
+    const { email } = userObject;
+    const findUser = await this.userModel.findOne({
+      email,
+    });
+    if (!findUser)
+      throw new HttpException('USER_NOT_FOUND', HttpStatus.NOT_FOUND);
 
     const payload = { id: findUser._id, name: findUser.name };
     const token = this.jwtAuthService.sign(payload, { expiresIn: '7d' });
