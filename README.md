@@ -1,78 +1,38 @@
+# FeelBetter <img height="30" src="https://purepng.com/public/uploads/large/purepng.com-green-leavesleaffoliageautumn-foliagephotosynthetic-function-14115270577090i4xd.png" >
+
+FeelBetter es una aplicación web diseñada para ayudar en el manejo diario del dolor crónico a través de trabajo cognitivo y de la meditación.
+
+Debido a la poca difusión actualizada de este tipo de contenido en español, decidí investigar y recoger la información ordenadamente, además de añadir herramientas para ayudar a ponerla en práctica. La web está disponible en español, en francés y también en inglés.
+
+<div style="display:flex; justify-content:center;">
+  <img src="src/presentation.gif" alt="Image description" height="400">
+</div>
+
+---
+
+![Screenshot 2024-05-01 at 11 40 31](https://github.com/vanesascode/vanesascode/assets/131259155/924a3679-0145-454b-b75b-67b1f50d9d10)
+
+![Screenshot 2024-05-01 at 11 41 28](https://github.com/vanesascode/vanesascode/assets/131259155/9da99bea-e302-44df-bbe0-39ed3c4d8d8e)
+
+![Screenshot 2024-05-01 at 11 41 39](https://github.com/vanesascode/vanesascode/assets/131259155/45e7e1c4-3aa6-4ef9-a09a-f556b66f747a)
+
+![Screenshot 2024-05-01 at 11 42 18](https://github.com/vanesascode/vanesascode/assets/131259155/8148b3b0-e9fc-4102-ad03-5409ee4da7ee)
+
+![Screenshot 2024-05-01 at 11 46 04](https://github.com/vanesascode/vanesascode/assets/131259155/d8554bde-bb76-4eb0-beb7-d819f879f49e)
+
+![Screenshot 2024-05-01 at 11 47 50](https://github.com/vanesascode/vanesascode/assets/131259155/bdbab725-f18b-4e87-b6ad-e621e7adb767)
+
+---
+
+---
+
+## Herramientas para la creación del servidor:
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
-
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
-
-## Description
-
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
-
-## Installation
-
-```bash
-$ npm install
-```
-
-## Running the app
-
-```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
-```
-
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
-
-## Swagger
+## <img height="30" src="https://purepng.com/public/uploads/large/purepng.com-green-leavesleaffoliageautumn-foliagephotosynthetic-function-14115270577090i4xd.png" >Swagger
 
 `npm install --save @nestjs/swagger`
 
@@ -93,7 +53,7 @@ Add the @Apitags() decorators to the controllers
 
 Go to: http://localhost:3000/api
 
-## Mongoose
+## <img height="30" src="https://purepng.com/public/uploads/large/purepng.com-green-leavesleaffoliageautumn-foliagephotosynthetic-function-14115270577090i4xd.png" >Mongoose
 
 `npm i @nestjs/mongoose mongoose`
 
@@ -103,7 +63,7 @@ Import the MoongoseModule in the module file.
 
 Add the InjectModel in the service file.
 
-## Pipes
+## <img height="30" src="https://purepng.com/public/uploads/large/purepng.com-green-leavesleaffoliageautumn-foliagephotosynthetic-function-14115270577090i4xd.png" >Pipes
 
 `npm i --save class-validator class-transformer`
 
@@ -115,7 +75,7 @@ Add this to the main.ts file:
 app.useGlobalPipes(new ValidationPipe());
 ```
 
-## ENV
+## <img height="30" src="https://purepng.com/public/uploads/large/purepng.com-green-leavesleaffoliageautumn-foliagephotosynthetic-function-14115270577090i4xd.png" >ENV
 
 `npm i --save @nestjs/config`
 
@@ -128,7 +88,8 @@ In app.module.ts add:
     }),
 ```
 
-## Auth packages
+## <img height="30" src="https://purepng.com/public/uploads/large/purepng.com-green-leavesleaffoliageautumn-foliagephotosynthetic-function-14115270577090i4xd.png" >Auth packages
 
 `npm i @nestjs/jwt @nestjs/passport passport passport-jwt bcrypt`
+
 `npm i -D @types/passport-jwt @types/bcrypt`
